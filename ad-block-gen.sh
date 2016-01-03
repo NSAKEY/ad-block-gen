@@ -23,6 +23,21 @@
 #                                                                             #
 ###############################################################################
 
+# Conditional statements to create the lists and tmp directories.
+# This stuff isn't particularly clever, but you need it anyway.
+
+if [ ! -d "tmp" ]; then
+    mkdir tmp
+fi
+
+if [ ! -d "lists" ]; then
+    mkdir -p lists/someonewhocares
+    mkdir lists/adaway
+    mkdir lists/winhelp2002
+    mkdir lists/hosts-file
+    mkdir lists/yoyo
+    mkdir lists/malwaredomainlist
+fi
 
 # We'll use the -O flag to dump these files into text files whose name somewhat
 # reflects where we'll get them.
