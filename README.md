@@ -1,3 +1,6 @@
+ad-block-gen
+===================
+
 ad-block-gen is a project for shutting down advertisers and other miscreants. It works by downloading popular hosts files for blocking advertisers, malware domains, etc. and combines/de-duplicates them. Not only that, but the resulting hosts file is also converted into a block list which can be used with Unbound. In other words: If you want to do hosts file-based blocking or DNS blocking, this project has you covered.
 
 The idea of this script originally came about when I bought a new phone, and didn't want to root it (And lose things like OTA updates) just to have decent ad-blocking. Instead, I opted to push the job of blocking hosts out to a DNS server, and that approach has worked reasonably well. Though the YouTube app still lets ads through, I can visit m.youtube.com with Chrome and never see advertising.
